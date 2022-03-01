@@ -2,6 +2,7 @@
   "name": "ilt-2-fe-es6",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js"
