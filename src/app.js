@@ -36,6 +36,14 @@ Fighter.prototype.attack = function(enemy) {
   console.log(enemy.name + ' has ' + enemy.health + ' health left.');
 };
 
+function Monster(name, health, attackPower, defensePower) {
+  Fighter.call(this, name, health, attackPower, defensePower);
+}
+
+Monster.prototype = Object.create(Fighter.prototype);
+Monster.prototype.constructor = Monster;
+
+
 function Hero(name, health, attackPower, defensePower) {
   Fighter.call(this, name, health, attackPower, defensePower);
 }
@@ -44,16 +52,6 @@ Hero.prototype = Object.create(Fighter.prototype);
 Hero.prototype.constructor = Hero;
 Hero.prototype.sayHello = function() {
   console.log('My name is ' + this.name + '! I am a mighty hero!');
-};
-
-function Monster(name, health, attackPower, defensePower) {
-  Fighter.call(this, name, health, attackPower, defensePower);
-}
-
-Monster.prototype = Object.create(Fighter.prototype);
-Monster.prototype.constructor = Monster;
-Monster.prototype.sayHello = function() {
-  console.log('Grrr! ' + this.name + '! Grrrrrr!');
 };
 
 function main() {
