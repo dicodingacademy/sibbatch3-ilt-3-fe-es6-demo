@@ -8,9 +8,7 @@ class Fighter {
   }
 
   attack(enemy) {
-    // it should be this, but it's not working
-    // if (this.constructor.name === enemy.constructor.name) {
-    if (this.name === enemy.name) {
+    if (this.constructor.name === enemy.constructor.name) {
       console.log('Cannot attack same entity');
       return;
     }
