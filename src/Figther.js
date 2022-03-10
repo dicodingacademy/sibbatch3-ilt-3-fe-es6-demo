@@ -20,7 +20,7 @@ Fighter.prototype.attack = function (enemy) {
   }
 
 
-  var damage = this.attackPower - enemy.defensePower;
+  const damage = this.attackPower - enemy.defensePower;
 
   if (damage > 0) {
     enemy.health -= damage;

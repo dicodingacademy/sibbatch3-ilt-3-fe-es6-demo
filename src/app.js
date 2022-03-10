@@ -2,8 +2,8 @@ import Monster from './Monster.js';
 import Hero from './Hero.js';
 
 function main() {
-  var link = new Hero('Link', 100, 45, 5);
-  var ganon = new Monster('Ganon', 100, 25, 15);
+  const link = new Hero('Link', 100, 45, 5);
+  const ganon = new Monster('Ganon', 100, 25, 15);
 
   link.sayHello();
 
