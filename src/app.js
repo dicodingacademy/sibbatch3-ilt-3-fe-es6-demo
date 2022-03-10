@@ -6,7 +6,6 @@ function main() {
   var ganon = new Monster('Ganon', 100, 25, 15);
 
   link.sayHello();
-  ganon.sayHello();
 
   link.attack(ganon);
   ganon.attack(link);
