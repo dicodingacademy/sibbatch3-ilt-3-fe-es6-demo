@@ -1,4 +1,4 @@
-# ILT 2 FEBE - ES6 Demo
+# ILT 3 FEBE - ES6 Demo
 
 ## Instruksi
 
