@@ -1,5 +1,5 @@
 class Fighter {
-  constructor(name, health, attackPower, defensePower) {
+  constructor({name, health, attackPower, defensePower} = {}) {
     this.name = name;
     this.health = health;
     this.attackPower = attackPower;
@@ -17,7 +17,6 @@ class Fighter {
       console.log('Cannot attack dead entity');
       return;
     }
-
 
     const damage = this.attackPower - enemy.defensePower;
 
